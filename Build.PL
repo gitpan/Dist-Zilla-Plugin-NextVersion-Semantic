@@ -7,14 +7,12 @@ use Module::Build 0.3601;
 
 my %module_build_args = (
   "build_requires" => {
-    "Carp" => 0,
     "File::Find" => 0,
     "File::Temp" => 0,
     "Module::Build" => "0.3601",
-    "Scalar::Util" => 0,
     "Test::DZil" => 0,
-    "Test::More" => "0.94",
-    "perl" => "5.004"
+    "Test::Exception" => 0,
+    "Test::More" => "0.88"
   },
   "configure_requires" => {
     "Module::Build" => "0.3601"
@@ -24,7 +22,7 @@ my %module_build_args = (
     "Yanick Champoux <yanick\@cpan.org>"
   ],
   "dist_name" => "Dist-Zilla-Plugin-NextVersion-Semantic",
-  "dist_version" => "0.1.0",
+  "dist_version" => "0.1.1",
   "license" => "perl",
   "module_name" => "Dist::Zilla::Plugin::NextVersion::Semantic",
   "recommends" => {},
@@ -32,6 +30,7 @@ my %module_build_args = (
   "requires" => {
     "CPAN::Changes" => "0.17",
     "Dist::Zilla::Role::AfterRelease" => 0,
+    "Dist::Zilla::Role::BeforeRelease" => 0,
     "Dist::Zilla::Role::FileMunger" => 0,
     "Dist::Zilla::Role::Plugin" => 0,
     "Dist::Zilla::Role::TextTemplate" => 0,

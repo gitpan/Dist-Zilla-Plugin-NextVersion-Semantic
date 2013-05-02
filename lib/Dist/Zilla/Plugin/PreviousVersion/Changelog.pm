@@ -3,7 +3,7 @@ BEGIN {
   $Dist::Zilla::Plugin::PreviousVersion::Changelog::AUTHORITY = 'cpan:YANICK';
 }
 {
-  $Dist::Zilla::Plugin::PreviousVersion::Changelog::VERSION = '0.1.0';
+  $Dist::Zilla::Plugin::PreviousVersion::Changelog::VERSION = '0.1.1';
 }
 # ABSTRACT: extract previous version from changelog
 
@@ -58,6 +58,7 @@ __PACKAGE__->meta->make_immutable;
 1;
 
 __END__
+
 =pod
 
 =head1 NAME
@@ -66,7 +67,7 @@ Dist::Zilla::Plugin::PreviousVersion::Changelog - extract previous version from 
 
 =head1 VERSION
 
-version 0.1.0
+version 0.1.1
 
 =head1 DESCRIPTION
 
@@ -96,4 +97,3 @@ This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
 
 =cut
-

@@ -3,14 +3,18 @@ NAME
     semantic-wise
 
 VERSION
-    version 0.1.0
+    version 0.1.1
 
 SYNOPSIS
         # in dist.ini
+
         [NextVersion::Semantic]
         major = MAJOR, API CHANGE
         minor = MINOR, ENHANCEMENTS
         revision = REVISION, BUG FIXES
+
+        ; must also load a PreviousVersionProvider
+        [PreviousVersion::Changelog]
 
 DESCRIPTION
     Increases the distribution's version according to the semantic

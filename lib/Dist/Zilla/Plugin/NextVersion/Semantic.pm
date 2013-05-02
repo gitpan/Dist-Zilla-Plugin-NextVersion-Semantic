@@ -3,7 +3,7 @@ BEGIN {
   $Dist::Zilla::Plugin::NextVersion::Semantic::AUTHORITY = 'cpan:YANICK';
 }
 {
-  $Dist::Zilla::Plugin::NextVersion::Semantic::VERSION = '0.1.0';
+  $Dist::Zilla::Plugin::NextVersion::Semantic::VERSION = '0.1.1';
 }
 # ABSTRACT: update the next version, semantic-wise
 
@@ -20,6 +20,7 @@ with qw/
     Dist::Zilla::Role::Plugin
     Dist::Zilla::Role::FileMunger
     Dist::Zilla::Role::TextTemplate
+    Dist::Zilla::Role::BeforeRelease
     Dist::Zilla::Role::AfterRelease
     Dist::Zilla::Role::VersionProvider
 /;
@@ -134,8 +135,9 @@ has previous_version => (
             $self->zilla->plugins_with('-YANICK::PreviousVersionProvider');
 
         $self->log_fatal( 
-            "at least one plugin with the role PreviousVersionProvider is required" 
-        ) unless ref $plugins;
+            "at least one plugin with the role PreviousVersionProvider",
+            "must be referenced in dist.ini"
+        ) unless ref $plugins and @$plugins >= 1;
 
         for my $plugin ( @$plugins ) {
             my $version = $plugin->provide_previous_version;
@@ -233,8 +235,8 @@ __PACKAGE__->meta->make_immutable;
 no Moose;
 1;
 
-
 __END__
+
 =pod
 
 =head1 NAME
@@ -243,15 +245,19 @@ Dist::Zilla::Plugin::NextVersion::Semantic - update the next version, semantic-w
 
 =head1 VERSION
 
-version 0.1.0
+version 0.1.1
 
 =head1 SYNOPSIS
 
     # in dist.ini
+
     [NextVersion::Semantic]
     major = MAJOR, API CHANGE
     minor = MINOR, ENHANCEMENTS
     revision = REVISION, BUG FIXES
+
+    ; must also load a PreviousVersionProvider
+    [PreviousVersion::Changelog]
 
 =head1 DESCRIPTION
 
@@ -339,4 +345,3 @@ This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
 
 =cut
-

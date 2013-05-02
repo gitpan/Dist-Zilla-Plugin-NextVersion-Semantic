@@ -4,7 +4,7 @@
       "Yanick Champoux <yanick@cpan.org>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Dist::Zilla version 4.300009, CPAN::Meta::Converter version 2.120630",
+   "generated_by" : "Dist::Zilla version 4.300030, CPAN::Meta::Converter version 2.120921",
    "license" : [
       "perl_5"
    ],
@@ -24,10 +24,16 @@
             "Module::Build" : "0.3601"
          }
       },
+      "develop" : {
+         "requires" : {
+            "version" : "0.9901"
+         }
+      },
       "runtime" : {
          "requires" : {
             "CPAN::Changes" : "0.17",
             "Dist::Zilla::Role::AfterRelease" : "0",
+            "Dist::Zilla::Role::BeforeRelease" : "0",
             "Dist::Zilla::Role::FileMunger" : "0",
             "Dist::Zilla::Role::Plugin" : "0",
             "Dist::Zilla::Role::TextTemplate" : "0",
@@ -43,28 +49,26 @@
       },
       "test" : {
          "requires" : {
-            "Carp" : "0",
             "File::Find" : "0",
             "File::Temp" : "0",
-            "Scalar::Util" : "0",
             "Test::DZil" : "0",
-            "Test::More" : "0.94",
-            "perl" : "5.004"
+            "Test::Exception" : "0",
+            "Test::More" : "0.88"
          }
       }
    },
    "provides" : {
       "Dist::Zilla::Plugin::NextVersion::Semantic" : {
          "file" : "lib/Dist/Zilla/Plugin/NextVersion/Semantic.pm",
-         "version" : "v0.1.0"
+         "version" : "v0.1.1"
       },
       "Dist::Zilla::Plugin::PreviousVersion::Changelog" : {
          "file" : "lib/Dist/Zilla/Plugin/PreviousVersion/Changelog.pm",
-         "version" : "v0.1.0"
+         "version" : "v0.1.1"
       },
       "Dist::Zilla::Role::YANICK::PreviousVersionProvider" : {
          "file" : "lib/Dist/Zilla/Role/YANICK/PreviousVersionProvider.pm",
-         "version" : "v0.1.0"
+         "version" : "v0.1.1"
       }
    },
    "release_status" : "stable",
@@ -80,7 +84,13 @@
          "web" : "https://github.com/yanick/Dist-Zilla-Plugin-NextVersion-Semantic"
       }
    },
-   "version" : "0.1.0",
-   "x_authority" : "cpan:YANICK"
+   "version" : "0.1.1",
+   "x_author_pledge" : {
+      "version" : 1
+   },
+   "x_authority" : "cpan:YANICK",
+   "x_contributors" : [
+      "Alex Peters <lxp@cpan.org>"
+   ]
 }
 

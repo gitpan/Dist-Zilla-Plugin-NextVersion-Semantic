@@ -3,7 +3,7 @@ BEGIN {
   $Dist::Zilla::Role::YANICK::PreviousVersionProvider::AUTHORITY = 'cpan:YANICK';
 }
 {
-  $Dist::Zilla::Role::YANICK::PreviousVersionProvider::VERSION = '0.1.0';
+  $Dist::Zilla::Role::YANICK::PreviousVersionProvider::VERSION = '0.1.1';
 }
 # provides the previously released version
 
@@ -19,6 +19,7 @@ requires 'provide_previous_version';
 1;
 
 __END__
+
 =pod
 
 =head1 NAME
@@ -27,7 +28,7 @@ Dist::Zilla::Role::YANICK::PreviousVersionProvider
 
 =head1 VERSION
 
-version 0.1.0
+version 0.1.1
 
 =head1 DESCRIPTION
 
@@ -57,4 +58,3 @@ This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
 
 =cut
-

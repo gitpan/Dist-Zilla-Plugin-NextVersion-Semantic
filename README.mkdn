@@ -4,15 +4,19 @@ Dist::Zilla::Plugin::NextVersion::Semantic - update the next version, semantic-w
 
 # VERSION
 
-version 0.1.0
+version 0.1.1
 
 # SYNOPSIS
 
     # in dist.ini
+
     [NextVersion::Semantic]
     major = MAJOR, API CHANGE
     minor = MINOR, ENHANCEMENTS
     revision = REVISION, BUG FIXES
+
+    ; must also load a PreviousVersionProvider
+    [PreviousVersion::Changelog]
 
 # DESCRIPTION
 
@@ -60,11 +64,11 @@ consuming the [Dist::Zilla::Role::YANICK::PreviousVersionProvider](http://search
 
 # PARAMETERS
 
-## change_file
+## change\_file
 
 File name of the changelog. Defaults to `Changes`.
 
-## numify_version
+## numify\_version
 
 If __true__, the version will be a number using the _x.yyyzzz_ convention instead 
 of _x.y.z_.  Defaults to __false__.
@@ -86,7 +90,7 @@ Defaults to `BUG FIXES, DOCUMENTATION`.
 
 # AUTHOR
 
-Yanick Champoux <yanick@cpan.org>
+Yanick Champoux <yanick@cpan.org> [![endorse](http://api.coderwall.com/yanick/endorsecount.png)](http://coderwall.com/yanick)
 
 # COPYRIGHT AND LICENSE
 
