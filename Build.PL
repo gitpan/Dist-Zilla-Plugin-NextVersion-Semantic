@@ -22,13 +22,13 @@ my %module_build_args = (
     "Yanick Champoux <yanick\@cpan.org>"
   ],
   "dist_name" => "Dist-Zilla-Plugin-NextVersion-Semantic",
-  "dist_version" => "0.1.1",
+  "dist_version" => "0.1.2",
   "license" => "perl",
   "module_name" => "Dist::Zilla::Plugin::NextVersion::Semantic",
   "recommends" => {},
   "recursive_test_files" => 1,
   "requires" => {
-    "CPAN::Changes" => "0.17",
+    "CPAN::Changes" => "0.20",
     "Dist::Zilla::Role::AfterRelease" => 0,
     "Dist::Zilla::Role::BeforeRelease" => 0,
     "Dist::Zilla::Role::FileMunger" => 0,

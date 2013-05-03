@@ -31,7 +31,7 @@
       },
       "runtime" : {
          "requires" : {
-            "CPAN::Changes" : "0.17",
+            "CPAN::Changes" : "0.20",
             "Dist::Zilla::Role::AfterRelease" : "0",
             "Dist::Zilla::Role::BeforeRelease" : "0",
             "Dist::Zilla::Role::FileMunger" : "0",
@@ -60,15 +60,15 @@
    "provides" : {
       "Dist::Zilla::Plugin::NextVersion::Semantic" : {
          "file" : "lib/Dist/Zilla/Plugin/NextVersion/Semantic.pm",
-         "version" : "v0.1.1"
+         "version" : "v0.1.2"
       },
       "Dist::Zilla::Plugin::PreviousVersion::Changelog" : {
          "file" : "lib/Dist/Zilla/Plugin/PreviousVersion/Changelog.pm",
-         "version" : "v0.1.1"
+         "version" : "v0.1.2"
       },
       "Dist::Zilla::Role::YANICK::PreviousVersionProvider" : {
          "file" : "lib/Dist/Zilla/Role/YANICK/PreviousVersionProvider.pm",
-         "version" : "v0.1.1"
+         "version" : "v0.1.2"
       }
    },
    "release_status" : "stable",
@@ -84,7 +84,7 @@
          "web" : "https://github.com/yanick/Dist-Zilla-Plugin-NextVersion-Semantic"
       }
    },
-   "version" : "0.1.1",
+   "version" : "0.1.2",
    "x_author_pledge" : {
       "version" : 1
    },

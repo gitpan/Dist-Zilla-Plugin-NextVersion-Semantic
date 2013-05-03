@@ -3,7 +3,7 @@ BEGIN {
   $Dist::Zilla::Plugin::NextVersion::Semantic::AUTHORITY = 'cpan:YANICK';
 }
 {
-  $Dist::Zilla::Plugin::NextVersion::Semantic::VERSION = '0.1.1';
+  $Dist::Zilla::Plugin::NextVersion::Semantic::VERSION = '0.1.2';
 }
 # ABSTRACT: update the next version, semantic-wise
 
@@ -11,7 +11,7 @@ BEGIN {
 use strict;
 use warnings;
 
-use CPAN::Changes 0.17;
+use CPAN::Changes 0.20;
 use Perl::Version;
 
 use Moose;
@@ -245,7 +245,7 @@ Dist::Zilla::Plugin::NextVersion::Semantic - update the next version, semantic-w
 
 =head1 VERSION
 
-version 0.1.1
+version 0.1.2
 
 =head1 SYNOPSIS
 

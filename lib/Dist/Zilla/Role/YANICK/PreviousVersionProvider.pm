@@ -3,7 +3,7 @@ BEGIN {
   $Dist::Zilla::Role::YANICK::PreviousVersionProvider::AUTHORITY = 'cpan:YANICK';
 }
 {
-  $Dist::Zilla::Role::YANICK::PreviousVersionProvider::VERSION = '0.1.1';
+  $Dist::Zilla::Role::YANICK::PreviousVersionProvider::VERSION = '0.1.2';
 }
 # provides the previously released version
 
@@ -28,7 +28,7 @@ Dist::Zilla::Role::YANICK::PreviousVersionProvider
 
 =head1 VERSION
 
-version 0.1.1
+version 0.1.2
 
 =head1 DESCRIPTION
 

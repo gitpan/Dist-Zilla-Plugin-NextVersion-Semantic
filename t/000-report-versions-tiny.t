@@ -48,7 +48,7 @@ sub pmver {
     return sprintf('%-45s => %-10s%-15s%s', $module, $pmver, $wanted, "\n");
 }
 
-eval { $v .= pmver('CPAN::Changes','0.17') };
+eval { $v .= pmver('CPAN::Changes','0.20') };
 eval { $v .= pmver('Dist::Zilla::Role::AfterRelease','any version') };
 eval { $v .= pmver('Dist::Zilla::Role::BeforeRelease','any version') };
 eval { $v .= pmver('Dist::Zilla::Role::FileMunger','any version') };
