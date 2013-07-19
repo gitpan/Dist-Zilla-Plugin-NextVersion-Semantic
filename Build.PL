@@ -22,7 +22,7 @@ my %module_build_args = (
     "Yanick Champoux <yanick\@cpan.org>"
   ],
   "dist_name" => "Dist-Zilla-Plugin-NextVersion-Semantic",
-  "dist_version" => "0.1.2",
+  "dist_version" => "0.1.3",
   "license" => "perl",
   "module_name" => "Dist::Zilla::Plugin::NextVersion::Semantic",
   "recommends" => {},
@@ -35,6 +35,7 @@ my %module_build_args = (
     "Dist::Zilla::Role::Plugin" => 0,
     "Dist::Zilla::Role::TextTemplate" => 0,
     "Dist::Zilla::Role::VersionProvider" => 0,
+    "List::MoreUtils" => 0,
     "List::Util" => 0,
     "Moose" => 0,
     "Moose::Role" => 0,

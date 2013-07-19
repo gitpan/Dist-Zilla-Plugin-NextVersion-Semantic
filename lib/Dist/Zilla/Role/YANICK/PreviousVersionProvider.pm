@@ -3,9 +3,9 @@ BEGIN {
   $Dist::Zilla::Role::YANICK::PreviousVersionProvider::AUTHORITY = 'cpan:YANICK';
 }
 {
-  $Dist::Zilla::Role::YANICK::PreviousVersionProvider::VERSION = '0.1.2';
+  $Dist::Zilla::Role::YANICK::PreviousVersionProvider::VERSION = '0.1.3';
 }
-# provides the previously released version
+#ABSTRACT: provides the distribution's previously released version
 
 
 use strict;
@@ -24,11 +24,11 @@ __END__
 
 =head1 NAME
 
-Dist::Zilla::Role::YANICK::PreviousVersionProvider
+Dist::Zilla::Role::YANICK::PreviousVersionProvider - provides the distribution's previously released version
 
 =head1 VERSION
 
-version 0.1.2
+version 0.1.3
 
 =head1 DESCRIPTION
 

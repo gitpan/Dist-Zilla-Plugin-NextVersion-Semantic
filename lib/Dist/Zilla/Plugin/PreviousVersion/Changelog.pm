@@ -3,7 +3,7 @@ BEGIN {
   $Dist::Zilla::Plugin::PreviousVersion::Changelog::AUTHORITY = 'cpan:YANICK';
 }
 {
-  $Dist::Zilla::Plugin::PreviousVersion::Changelog::VERSION = '0.1.2';
+  $Dist::Zilla::Plugin::PreviousVersion::Changelog::VERSION = '0.1.3';
 }
 # ABSTRACT: extract previous version from changelog
 
@@ -67,7 +67,7 @@ Dist::Zilla::Plugin::PreviousVersion::Changelog - extract previous version from 
 
 =head1 VERSION
 
-version 0.1.2
+version 0.1.3
 
 =head1 DESCRIPTION
 
