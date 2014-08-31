@@ -2,11 +2,8 @@ package Dist::Zilla::Role::YANICK::PreviousVersionProvider;
 BEGIN {
   $Dist::Zilla::Role::YANICK::PreviousVersionProvider::AUTHORITY = 'cpan:YANICK';
 }
-{
-  $Dist::Zilla::Role::YANICK::PreviousVersionProvider::VERSION = '0.1.3';
-}
 #ABSTRACT: provides the distribution's previously released version
-
+$Dist::Zilla::Role::YANICK::PreviousVersionProvider::VERSION = '0.2.0';
 
 use strict;
 use warnings;
@@ -22,13 +19,15 @@ __END__
 
 =pod
 
+=encoding UTF-8
+
 =head1 NAME
 
 Dist::Zilla::Role::YANICK::PreviousVersionProvider - provides the distribution's previously released version
 
 =head1 VERSION
 
-version 0.1.3
+version 0.2.0
 
 =head1 DESCRIPTION
 

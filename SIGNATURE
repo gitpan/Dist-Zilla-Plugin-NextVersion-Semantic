@@ -1,5 +1,5 @@
 This file contains message digests of all files listed in MANIFEST,
-signed via the Module::Signature module, version 0.68.
+signed via the Module::Signature module, version 0.73.
 
 To verify the content in this distribution, first make sure you have
 Module::Signature installed, then type:
@@ -15,30 +15,31 @@ not run its Makefile.PL or Build.PL.
 Hash: SHA1
 
 SHA1 d699314121a92f76527dd7c04412b85572b36055 AUTHOR_PLEDGE
-SHA1 94f144d8b0ad33ed8cc5958e621cd8fb8c512189 Build.PL
-SHA1 223c55073c67b60141bbe5e7f482c92b238f82be CONTRIBUTORS
-SHA1 e7b89a00413918335e041abc3fe96b911d22e334 Changes
+SHA1 a22e0d7bbc872a382b0b0209be06b4542f526217 Build.PL
+SHA1 a403cf27c0953c69c489c27799fa871478063a2a CONTRIBUTORS
+SHA1 b828b192a93cc753b7922817eae655ec200e2649 Changes
 SHA1 9cdc7f1a9575fd49a1282d6d60b1ad236effe123 INSTALL
-SHA1 42a9b278ca94a31df654fec186efe74ba9565d7e LICENSE
-SHA1 5963a40b9e6186a5a2546089e6d955b60983c81a MANIFEST
+SHA1 4635555632db4eb10b992acc94a499271d2044ef LICENSE
+SHA1 48f2f55107502e81138596b99a327beeae0e32b2 MANIFEST
 SHA1 54d5ce1d3ec61d907da329787b0852d16d8fa96d MANIFEST.SKIP
-SHA1 0cdf75df6dbf8046b0fd77acd698c27d82284e43 META.json
-SHA1 532cbdad1b675c946ed3a6602f0e13b5f895632a META.yml
-SHA1 6760ebcf5dc9a207b35420f3774a209253c58cbe README
-SHA1 db2ddcd772797689a446a52bf73dbe6a56b0d854 README.mkdn
+SHA1 d0bf78315918e76143e00f802a0bfd5856522739 META.json
+SHA1 087c56454a84bc841331ff1cc614dcd66c568a2c META.yml
+SHA1 101cea343728aff96ff9727ff368eb3473d04bb5 README
+SHA1 86a656fcb64d381b57e5473fbffda8d51d8452b0 README.mkdn
 SHA1 9439558ea8192dfd4359a13c014596e299e10606 corpus/lib/DZT/Sample.pm
-SHA1 383ea90a33c34532e1847396363cf5fd5e15ed70 dist.ini
-SHA1 edd3a4e727b6a116cda93ad18c99153dfcd589b7 lib/Dist/Zilla/Plugin/NextVersion/Semantic.pm
-SHA1 663bed29a17cbdc3d74e99f6d9a3f2d99e1b7e01 lib/Dist/Zilla/Plugin/PreviousVersion/Changelog.pm
-SHA1 7f3edd6e2cd7a54cecea9134d5ba6b819ca79115 lib/Dist/Zilla/Role/YANICK/PreviousVersionProvider.pm
-SHA1 3cbe905b92fbc69d59a06031d5ce6c837b352aa2 t/00-compile.t
-SHA1 9058490d59cebe72d952019148d729eee506246e t/000-report-versions-tiny.t
+SHA1 f1db53ab1c97c1da0a59e6097c36f246c8b6e085 dist.ini
+SHA1 9f88c8763a6b1e18c3a8d09e7194e978d30ff053 lib/Dist/Zilla/Plugin/NextVersion/Semantic.pm
+SHA1 922e5e30b70e30bfafc0bcf9879300ea159618a5 lib/Dist/Zilla/Plugin/PreviousVersion/Changelog.pm
+SHA1 a8c0966fd2ccb84e7f46a7125e103b17c5e6f87d lib/Dist/Zilla/Role/YANICK/PreviousVersionProvider.pm
+SHA1 00a2512fc10bfd247f85ed24aa4a369b5a7021fa t/00-compile.t
+SHA1 bcf82a2ad4df5f748c943a1477df3984a423c3ab t/000-report-versions-tiny.t
 SHA1 f28812435973b4e77c6d8aff6a68bef934896c7d t/basic.t
-SHA1 ec3f84bfd7a9ce3246e7592f4134100c6b5ce02b xt/release/unused-vars.t
+SHA1 866c813c8868603e7d3c14b67401c88439238110 t/format.t
+SHA1 d1fe7d94b3edc7847eb187d4ee41f66e19cf8907 xt/release/unused-vars.t
 -----BEGIN PGP SIGNATURE-----
-Version: GnuPG v1.4.11 (GNU/Linux)
+Version: GnuPG v1
 
-iEYEARECAAYFAlHohjcACgkQ34Hwf+GwC4xe0gCg6v5gqwRuAlqg0KzrYAGXU/l/
-QE0AoKtDG+aA0uG9jHEQsT8f3hkpluna
-=9p8H
+iEYEARECAAYFAlQDnF8ACgkQ34Hwf+GwC4yAhgCcCMwrWQZRgoC7Qq4E6BJ/QAvF
+JAIAn3DeBu50RGmIER+C41wBgwih9due
+=HD5h
 -----END PGP SIGNATURE-----

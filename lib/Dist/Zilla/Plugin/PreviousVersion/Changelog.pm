@@ -2,11 +2,8 @@ package Dist::Zilla::Plugin::PreviousVersion::Changelog;
 BEGIN {
   $Dist::Zilla::Plugin::PreviousVersion::Changelog::AUTHORITY = 'cpan:YANICK';
 }
-{
-  $Dist::Zilla::Plugin::PreviousVersion::Changelog::VERSION = '0.1.3';
-}
 # ABSTRACT: extract previous version from changelog
-
+$Dist::Zilla::Plugin::PreviousVersion::Changelog::VERSION = '0.2.0';
 
 use strict;
 use warnings;
@@ -61,13 +58,15 @@ __END__
 
 =pod
 
+=encoding UTF-8
+
 =head1 NAME
 
 Dist::Zilla::Plugin::PreviousVersion::Changelog - extract previous version from changelog
 
 =head1 VERSION
 
-version 0.1.3
+version 0.2.0
 
 =head1 DESCRIPTION
 
