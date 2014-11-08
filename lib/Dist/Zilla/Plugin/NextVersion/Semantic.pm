@@ -3,7 +3,7 @@ BEGIN {
   $Dist::Zilla::Plugin::NextVersion::Semantic::AUTHORITY = 'cpan:YANICK';
 }
 # ABSTRACT: update the next version, semantic-wise
-$Dist::Zilla::Plugin::NextVersion::Semantic::VERSION = '0.2.0';
+$Dist::Zilla::Plugin::NextVersion::Semantic::VERSION = '0.2.1';
 use strict;
 use warnings;
 
@@ -231,7 +231,7 @@ no Moose;
 BEGIN {
   $Dist::Zilla::Plugin::NextVersion::Semantic::Incrementer::AUTHORITY = 'cpan:YANICK';
 }
-$Dist::Zilla::Plugin::NextVersion::Semantic::Incrementer::VERSION = '0.2.0';
+$Dist::Zilla::Plugin::NextVersion::Semantic::Incrementer::VERSION = '0.2.1';
 use List::AllUtils qw/ first_index any /;
 
     use Moose::Role;
@@ -263,7 +263,7 @@ use List::AllUtils qw/ first_index any /;
             $regex =~ s/\\%d/(\\d+)/g;
 
             @version = $previous =~ /$regex/
-                or die "previous version '$previous' doesn't match format '$self->format'" ;
+                or die "previous version '$previous' doesn't match format '@{[$self->format]}'" ;
         }
 
         my @levels = qw/ MAJOR MINOR PATCH /;
@@ -312,7 +312,7 @@ Dist::Zilla::Plugin::NextVersion::Semantic - update the next version, semantic-w
 
 =head1 VERSION
 
-version 0.2.0
+version 0.2.1
 
 =head1 SYNOPSIS
 

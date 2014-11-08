@@ -3,7 +3,7 @@ BEGIN {
   $Dist::Zilla::Role::YANICK::PreviousVersionProvider::AUTHORITY = 'cpan:YANICK';
 }
 #ABSTRACT: provides the distribution's previously released version
-$Dist::Zilla::Role::YANICK::PreviousVersionProvider::VERSION = '0.2.0';
+$Dist::Zilla::Role::YANICK::PreviousVersionProvider::VERSION = '0.2.1';
 
 use strict;
 use warnings;
@@ -27,7 +27,7 @@ Dist::Zilla::Role::YANICK::PreviousVersionProvider - provides the distribution's
 
 =head1 VERSION
 
-version 0.2.0
+version 0.2.1
 
 =head1 DESCRIPTION
 
