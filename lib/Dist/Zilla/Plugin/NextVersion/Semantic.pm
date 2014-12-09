@@ -3,7 +3,7 @@ BEGIN {
   $Dist::Zilla::Plugin::NextVersion::Semantic::AUTHORITY = 'cpan:YANICK';
 }
 # ABSTRACT: update the next version, semantic-wise
-$Dist::Zilla::Plugin::NextVersion::Semantic::VERSION = '0.2.1';
+$Dist::Zilla::Plugin::NextVersion::Semantic::VERSION = '0.2.2';
 use strict;
 use warnings;
 
@@ -149,8 +149,7 @@ has previous_version => (
             return $version if defined $version;
         }
 
-        $self->log_fatal('no previous version found');
-
+        return undef;
     },
 );
 
@@ -173,6 +172,7 @@ sub next_version {
 
     $new_ver = Perl::Version->new( $new_ver )->numify if $self->numify_version;
 
+    no warnings;
     $self->log("Bumping version from $last_version to $new_ver");
     return $new_ver;
 }
@@ -231,7 +231,7 @@ no Moose;
 BEGIN {
   $Dist::Zilla::Plugin::NextVersion::Semantic::Incrementer::AUTHORITY = 'cpan:YANICK';
 }
-$Dist::Zilla::Plugin::NextVersion::Semantic::Incrementer::VERSION = '0.2.1';
+$Dist::Zilla::Plugin::NextVersion::Semantic::Incrementer::VERSION = '0.2.2';
 use List::AllUtils qw/ first_index any /;
 
     use Moose::Role;
@@ -253,16 +253,14 @@ use List::AllUtils qw/ first_index any /;
 
         my @version = (0,0,0);
 
-        my $previous = $self->previous_version;
-
         # initial version is special
-        unless ( $previous eq '0' ) {
+        if ( my $previous = $self->previous_version ) {
             my $regex = quotemeta $self->format;
             $regex =~ s/\\%0(\d+)d/(\\d{$1})/g;
             $regex =~ s/\\%(\d+)d/(\\d{1,$1})/g;
             $regex =~ s/\\%d/(\\d+)/g;
 
-            @version = $previous =~ /$regex/
+            @version = $previous =~ m/$regex/
                 or die "previous version '$previous' doesn't match format '@{[$self->format]}'" ;
         }
 
@@ -312,7 +310,7 @@ Dist::Zilla::Plugin::NextVersion::Semantic - update the next version, semantic-w
 
 =head1 VERSION
 
-version 0.2.1
+version 0.2.2
 
 =head1 SYNOPSIS
 

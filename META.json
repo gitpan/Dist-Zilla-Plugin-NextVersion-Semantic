@@ -63,19 +63,19 @@
    "provides" : {
       "Dist::Zilla::Plugin::NextVersion::Semantic" : {
          "file" : "lib/Dist/Zilla/Plugin/NextVersion/Semantic.pm",
-         "version" : "v0.2.1"
+         "version" : "v0.2.2"
       },
       "Dist::Zilla::Plugin::NextVersion::Semantic::Incrementer" : {
          "file" : "lib/Dist/Zilla/Plugin/NextVersion/Semantic.pm",
-         "version" : "v0.2.1"
+         "version" : "v0.2.2"
       },
       "Dist::Zilla::Plugin::PreviousVersion::Changelog" : {
          "file" : "lib/Dist/Zilla/Plugin/PreviousVersion/Changelog.pm",
-         "version" : "v0.2.1"
+         "version" : "v0.2.2"
       },
       "Dist::Zilla::Role::YANICK::PreviousVersionProvider" : {
          "file" : "lib/Dist/Zilla/Role/YANICK/PreviousVersionProvider.pm",
-         "version" : "v0.2.1"
+         "version" : "v0.2.2"
       }
    },
    "release_status" : "stable",
@@ -90,7 +90,7 @@
          "web" : "https://github.com/yanick/Dist-Zilla-Plugin-NextVersion-Semantic"
       }
    },
-   "version" : "0.2.1",
+   "version" : "0.2.2",
    "x_author_pledge" : {
       "version" : 1
    },
